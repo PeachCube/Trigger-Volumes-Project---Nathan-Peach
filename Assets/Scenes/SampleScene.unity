@@ -344,6 +344,33 @@ NavMeshAgent:
   m_BaseOffset: 0.00000030296917
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!1 &119171206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c01184887b01b34c9a2c49a50c6b2a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1908085820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &119171208
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119171206}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad2165455c407ee4892dba854387eef3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &247677308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5556aa87a3223ee46a0e4d2cdde0a7c5,
@@ -499,6 +526,7 @@ GameObject:
   - component: {fileID: 339114836}
   - component: {fileID: 339114835}
   - component: {fileID: 339114834}
+  - component: {fileID: 339114838}
   m_Layer: 0
   m_Name: Cauldron Button
   m_TagString: Untagged
@@ -592,6 +620,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &339114838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339114833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7730a61fd89039e4081e3245e2957b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 801068254}
+--- !u!23 &395684810 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 8e470bd0393e7f449918c4fc5878c5e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1311887182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -800,6 +847,7 @@ GameObject:
   - component: {fileID: 703339431}
   - component: {fileID: 703339430}
   - component: {fileID: 703339429}
+  - component: {fileID: 703339433}
   m_Layer: 0
   m_Name: Pumpkin Button
   m_TagString: Untagged
@@ -893,6 +941,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &703339433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703339428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d081b54ac81fb944c98b96605e4f42b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetRenderer: {fileID: 395684810}
+  onColor: {r: 1, g: 1, b: 1, a: 1}
+  offColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!1 &801068254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91514e26c48c8204fb16a277c85a0b2c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2013320919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,7 +2102,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c01184887b01b34c9a2c49a50c6b2a0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 119171208}
   m_SourcePrefab: {fileID: 100100000, guid: 0c01184887b01b34c9a2c49a50c6b2a0, type: 3}
 --- !u!1001 &1919231698
 PrefabInstance:
@@ -2150,6 +2223,7 @@ GameObject:
   - component: {fileID: 1965288321}
   - component: {fileID: 1965288320}
   - component: {fileID: 1965288319}
+  - component: {fileID: 1965288323}
   m_Layer: 0
   m_Name: Ghost Button
   m_TagString: Untagged
@@ -2243,6 +2317,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1965288323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965288318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba96260cfcc4eb344bf5d25a45bd1e63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 119171208}
+  animationTrigger: Activate
 --- !u!1001 &1995904896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2438,6 +2526,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cauldron
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 91514e26c48c8204fb16a277c85a0b2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
